@@ -218,6 +218,7 @@
 		fido_dev_largeblob_set_array;
 		fido_init;
 		fido_tx;
+		fido_rx;
 		fido_set_log_handler;
 		fido_strerr;
 		rs256_pk_free;
