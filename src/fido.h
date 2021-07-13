@@ -156,6 +156,7 @@ int fido_dev_set_pin(fido_dev_t *, const char *, const char *);
 int fido_dev_set_transport_functions(fido_dev_t *, const fido_dev_transport_t *);
 
 int	fido_tx(fido_dev_t *d, uint8_t cmd, const void *buf, size_t count);
+int fido_rx(fido_dev_t *d, uint8_t cmd, void *but, size_t count, int ms);
 
 size_t fido_assert_authdata_len(const fido_assert_t *, size_t);
 size_t fido_assert_clientdata_hash_len(const fido_assert_t *);
